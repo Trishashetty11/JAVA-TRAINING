@@ -5,7 +5,11 @@ const type = document.getElementById("vehicleType").value;
 const speed = parseInt(document.getElementById("speed").value);
 const limit = parseInt(document.getElementById("limit").value);
 const lane = document.getElementById("lane").value;
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
+});
 
 if (!vehicle || !speed || !limit) {
     alert("Please fill all required fields");
