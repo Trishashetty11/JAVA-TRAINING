@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Fine Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Traffic Fine Management System</h1>
+</header>
+
+<main class="container">
+
+```
+<!-- Fine Calculator -->
+<section class="card">
+    <h2>Fine Calculator</h2>
+
+    <label>Vehicle Number</label>
+    <input type="text" id="vehicle" placeholder="MH12AB1234">
+
+    <label>Zone</label>
+    <select id="zone">
+        <option value="school">School Zone</option>
+        <option value="residential">Residential Area</option>
+        <option value="highway">Highway</option>
+    </select>
+
+    <label>Vehicle Type</label>
+    <select id="vehicleType">
+        <option value="bike">Bike</option>
+        <option value="car">Car</option>
+        <option value="truck">Truck</option>
+    </select>
+
+    <label>Speed (km/h)</label>
+    <input type="number" id="speed">
+
+    <label>Speed Limit (km/h)</label>
+    <input type="number" id="limit">
+
+    <label>Lane Violation</label>
+    <select id="lane">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+    </select>
+
+    <button onclick="calculateFine()">Calculate Fine</button>
+
+    <div id="result" class="result"></div>
+</section>
+
+<!-- Summary Panel -->
+<section class="card">
+    <h2>Fine Summary</h2>
+
+    <div class="info-box">
+        <span>Vehicle</span>
+        <span id="outVehicle">-</span>
+    </div>
+
+    <div class="info-box">
+        <span>Zone</span>
+        <span id="outZone">-</span>
+    </div>
+
+    <div class="info-box">
+        <span>Speed Over Limit</span>
+        <span id="outSpeed">-</span>
+    </div>
+
+    <div class="info-box">
+        <span>Total Fine</span>
+        <span id="outFine">₹0</span>
+    </div>
+
+</section>
+```
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

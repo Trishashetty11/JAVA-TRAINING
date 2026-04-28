@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: "Inter", sans-serif;
+background: #0f172a;
+color: #e5e7eb;
+}
+
+/* Header */
+header {
+padding: 20px;
+background: #111827;
+border-bottom: 1px solid #1f2937;
+}
+
+h1 {
+font-size: 20px;
+}
+
+/* Layout */
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 24px;
+padding: 24px;
+}
+
+/* Cards */
+.card {
+background: #111827;
+padding: 20px;
+border-radius: 10px;
+border: 1px solid #1f2937;
+}
+
+/* Form */
+label {
+font-size: 13px;
+margin-top: 10px;
+display: block;
+}
+
+input, select {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 6px;
+border: 1px solid #1f2937;
+background: #020617;
+color: #e5e7eb;
+}
+
+/* Button */
+button {
+width: 100%;
+margin-top: 15px;
+padding: 10px;
+background: #2563eb;
+border: none;
+border-radius: 6px;
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+background: #1d4ed8;
+}
+
+/* Info */
+.info-box {
+display: flex;
+justify-content: space-between;
+padding: 10px 0;
+border-bottom: 1px solid #1f2937;
+}
+
+/* Result */
+.result {
+margin-top: 15px;
+font-weight: 500;
+font-size: 15px;
+}
